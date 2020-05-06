@@ -14,8 +14,8 @@ Initial Test Page:
 
 
 ### Now we set up JOB2 - This job detects changes to master branch and downloads the files to its workspace. Then it transfers files to production server. It is triggered by JOB3.
-![Job1 config](/images/5.jpg)
 ![Job1 config](/images/6.jpg)
+![Job1 config](/images/5.jpg)
 
 
 ### Now we set up JOB3 - This job is triggered manually by the QA team after they find the test server environment is fit for production. This job merges the developer branch to master branch.
