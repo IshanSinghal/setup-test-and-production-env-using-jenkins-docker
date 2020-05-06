@@ -75,7 +75,8 @@ This merges the changes to master branch and then JOB2 is triggered.
 Now jenkins downloads the changes and tranfers it to production webserver.
 ```
 ```
-We can create a public IP with ngrok to make the page visible to the outside world :
+We can create a public IP with ngrok to make the production page visible to the outside world :
+./ngrok http 8081
 ```
 ![Job1 config](/images/14.jpg)
 
