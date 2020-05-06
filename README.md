@@ -1,6 +1,8 @@
 # How to setup separate test and production environments by integrating github-jenkins-docker.
 
+```
 NOTE: This blog assumes you know how to or you have already installed jenkins and docker.
+```
 
 ## SETUP
 
@@ -26,7 +28,9 @@ To run new test server using httpd os image:
 sudo docker run -d -t -i -p 8082:80 -v /devfiles:/usr/local/apache2/htdocs --name devserver httpd
 ```
 
+```
 Initial Test Page:
+```
 ![Dev server init](/images/1.jpg)
 
 
@@ -55,16 +59,26 @@ fi
 
 ## Now let us see the result.
 
+```
 When developer pushes a change.
+```
 ![Job1 config](/images/11.jpg)
+
+```
 JOB1 creates a new test environment and launches test webserver.
+```
 ![Job1 config](/images/12.jpg)
 
 ```
-QA team triggers JOB3 if dev server is approved. This merges the changes to master branch and then JOB2 is triggered. Now jenkins downloads the changes and tranfers it to production webserver.
-We can create a public IP with ngrok to make the page visible to the outside world.
-![Job1 config](/images/14.jpg)
+QA team triggers JOB3 if dev server is approved.
+This merges the changes to master branch and then JOB2 is triggered.
+Now jenkins downloads the changes and tranfers it to production webserver.
 ```
+```
+We can create a public IP with ngrok to make the page visible to the outside world :
+```
+![Job1 config](/images/14.jpg)
+
 
 ### Production server updated:
 ![Job1 config](/images/15.jpg)
