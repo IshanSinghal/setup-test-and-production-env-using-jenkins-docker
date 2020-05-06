@@ -8,6 +8,7 @@ NOTE: This blog assumes you know how to or you have already installed jenkins an
 Changes are downloaded to JOB1 workspace and a fresh test environment is set up using docker httpd image.
 ![Job1 config](/images/2.jpg)
 ![Job1 config](/images/3.jpg)
+
 Initial Test Page:
 ![Dev server init](/images/1.jpg)
 
@@ -21,3 +22,18 @@ Initial Test Page:
 ![Job1 config](/images/7.jpg)
 ![Job1 config](/images/8.jpg)
 ![Job1 config](/images/9.jpg)
+
+
+## Now let us see the result.
+
+When developer pushes a change.
+![Job1 config](/images/11.jpg)
+JOB1 creates a new test environment and launches test webserver.
+![Job1 config](/images/12.jpg)
+
+QA team triggers JOB3 if dev server is approved. This merges the changes to master branch and then JOB2 is triggered. Now jenkins downloads the changes and tranfers it to production webserver.
+We can create a public IP with ngrok to make the page visible to the outside world.
+![Job1 config](/images/14.jpg)
+
+### Production server :
+![Job1 config](/images/15.jpg)
