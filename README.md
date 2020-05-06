@@ -34,7 +34,18 @@ Initial Test Page:
 ![Job1 config](/images/6.jpg)
 ![Job1 config](/images/5.jpg)
 
+```
+To copy files to production folder linked to production server:
+sudo cp -v -r -f * /prodfiles
 
+Run the server if it does not exist:
+if sudo docker ps -a | grep prodserver
+then
+echo " already running"
+else
+sudo docker run -d -t -i -p 8081:80 -v /prodfiles:/usr/local/apache2/htdocs --name prodserver httpd
+fi
+```
 
 ### Now we set up JOB3 - This job is triggered manually by the QA team after they find the test server environment is fit for production. This job merges the developer branch to master branch.
 ![Job1 config](/images/7.jpg)
