@@ -10,7 +10,8 @@ Changes are downloaded to JOB1 workspace and a fresh test environment is set up 
 ![Job1 config](/images/2.jpg)
 ![Job1 config](/images/3.jpg)
 
-to copy files to test folder linked to test server:
+```
+To copy files to test folder linked to test server:
 sudo cp -v -r -f * /devfiles
 
 To remove old test environment if it exists:
@@ -23,6 +24,7 @@ fi
 
 To run new test server using httpd os image:
 sudo docker run -d -t -i -p 8082:80 -v /devfiles:/usr/local/apache2/htdocs --name devserver httpd
+```
 
 Initial Test Page:
 ![Dev server init](/images/1.jpg)
