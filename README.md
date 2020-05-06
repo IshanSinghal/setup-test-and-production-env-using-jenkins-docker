@@ -60,9 +60,11 @@ When developer pushes a change.
 JOB1 creates a new test environment and launches test webserver.
 ![Job1 config](/images/12.jpg)
 
+```
 QA team triggers JOB3 if dev server is approved. This merges the changes to master branch and then JOB2 is triggered. Now jenkins downloads the changes and tranfers it to production webserver.
 We can create a public IP with ngrok to make the page visible to the outside world.
 ![Job1 config](/images/14.jpg)
+```
 
 ### Production server updated:
 ![Job1 config](/images/15.jpg)
