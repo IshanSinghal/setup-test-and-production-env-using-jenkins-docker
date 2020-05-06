@@ -35,5 +35,5 @@ QA team triggers JOB3 if dev server is approved. This merges the changes to mast
 We can create a public IP with ngrok to make the page visible to the outside world.
 ![Job1 config](/images/14.jpg)
 
-### Production server :
+### Production server updated:
 ![Job1 config](/images/15.jpg)
