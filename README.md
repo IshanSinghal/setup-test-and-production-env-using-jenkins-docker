@@ -96,4 +96,7 @@ Add your jenkins public URL to github-webhooks.
 configure you configure job1 trigger to GitHub hook trigger for GITScm polling.
 ```
 ![Job1 config](/images/19.jpg)
+```
+So now when the developer pushes a new update
+```
 ![Job1 config](/images/21.jpg)
