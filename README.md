@@ -83,3 +83,16 @@ We can create a public IP with ngrok to make the production page visible to the 
 
 ### Production server updated:
 ![Job1 config](/images/15.jpg)
+
+
+### Future updates
+```
+JOB1 can be configured via github-webhooks also. But keep in mind that github does not provide per-branch webhooks.
+As per my research, changes in any branch will trigger the webhook and this is the reason I avoided it initially.
+But it should still perform better than POLLSCM.
+```
+```
+Add your jenkins public URL to github-webhooks.
+configure you configure job1 trigger to GitHub hook trigger for GITScm polling.
+```
+
