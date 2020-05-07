@@ -85,7 +85,7 @@ We can create a public IP with ngrok to make the production page visible to the 
 ![Job1 config](/images/15.jpg)
 
 
-### Future updates
+## Updates
 ```
 JOB1 can be configured via github-webhooks also. But keep in mind that github does not provide per-branch webhooks.
 As per my research, changes in any branch will trigger the webhook and this is the reason I avoided it initially.
