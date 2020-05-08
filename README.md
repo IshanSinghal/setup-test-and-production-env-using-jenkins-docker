@@ -100,3 +100,10 @@ configure you configure job1 trigger to GitHub hook trigger for GITScm polling.
 So now when the developer pushes a new update
 ```
 ![Job1 config](/images/21.jpg)
+
+
+## Future Updates
+```
+> QA job will automated.
+> The working video will be uploaded soon.
+```
